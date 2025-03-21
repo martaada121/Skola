@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <title>Baiti</title>
+    <link href="css/stils.css" rel="stylesheet" type="text/css">
+</head>  
+<body> 
+
+    <form>
+        <p>Aprēķināt cik daudz informācijas var lejupielādēt <p>  <input type="text"> sekundēs, ja interneta ātrums ir 25 Mbps.
+            
+        <p>Atbilde</p>
+        <div> <input type="text" name="atb"> </div>
+        
+        <input type="radio" id="KiB" ><label for="KiB">KiB</label>  
+        <input type="radio" id="KB" ><label for="KB">KB</label>  <p>
+            
+            
+            
+            
+            
+       
+        <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
+            <input value="RESET" type="reset">
+        </p>
+    </form> 
+    <form> 
+        <div>1.skaitlis<input type="text" name="sk1"> </div>
+        <div>
+            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
+             <input value="+" name="saskaitit" onclick="rez.value=sk1.value-(-sk2.value)" type="button">
+              <input value="-" name="atnemt" onclick="rez.value=sk1.value-sk2.value" type="button">
+              <input value="/" name="dalit" onclick="rez.value=sk1.value/sk2.value" type="button">
+               <input value="RESET" type="reset">
+        </div>
+        <div>2.skaitlis<input type="text" name="sk2"> </div>
+        <hr>
+        <div>Rezultāts<input name="rez"> </div>
+        
+    </form>
+</body>
+</html>
